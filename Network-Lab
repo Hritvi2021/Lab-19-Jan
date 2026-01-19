@@ -1,0 +1,22 @@
+1. Date:19-JAN-2026
+2. System:Amazon Linux 6.12 (VM)
+3. Interface Name:eth0, ens5
+4. IP Address: 172.31.31.16
+5. DNS Server: 172.31.31.16 (172.31.31.16) 
+6. Ping Result:PING 172.31.31.16 (172.31.31.16) 56(84) bytes of data.
+   Pinged 8.8.8.8 successfully with 0% packet loss and average latency of ~20 ms.
+7. Open Ports:
+    tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1905/sshd: /usr/sbi
+    tcp6       0      0 :::22                   :::*                    LISTEN      1905/sshd: /usr/sbi
+    22/tcp – SSH
+    80/tcp – HTTP 
+    8080/tcp – Jenkins
+8. Traceroute Summary:
+    traceroute to google.com (142.251.111.100), 30 hops max, 60 byte packets
+    bk-in-f100.1e100.net (142.251.111.100)  1.491 ms  1.524 ms  1.287 ms
+    
+9. Observations:
+    Network interface was in UP state with a valid private IP address.
+    DNS resolution was working correctly.
+    Required services were listening on expected ports.
+    Network connectivity was stable with no packet loss.
